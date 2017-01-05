@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/alexandergross/portfolio-site-project#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-notify": "^2.2.0",
+    "less-plugin-autoprefix": "^1.5.1",
+    "less-plugin-clean-css": "^1.5.1",
+    "rename": "^1.0.4",
+    "uglify": "^0.1.5"
   }
 }
