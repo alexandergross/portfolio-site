@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-site-project",
+  "version": "1.0.0",
+  "description": "Portfolio Project Site for Udacity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandergross/portfolio-site-project.git"
+  },
+  "author": "Alexander Gross",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandergross/portfolio-site-project/issues"
+  },
+  "homepage": "https://github.com/alexandergross/portfolio-site-project#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
