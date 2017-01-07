@@ -25,16 +25,63 @@ gulp.task('styles', function(){
 gulp.task('responsive-img', function(){
   gulp.src('src/img/**/*.{JPG,jpg,jpeg,gif,png}')
     .pipe(images({
+      'heading_img.jpg': [{
+        crop: false,
+        quality: 70,
+        width: 1920,
+        height: 550,
+        crop: true
+      }],
       '*': [{
-        crop: false,
         quality: 70,
-        width: 200,
-        suffix: '-200-1x',
+        width: 450,
+        height: 350,
+        crop: true,
+        suffix: '-450-1x'
       },{
-        crop: false,
         quality: 70,
-        width: 400,
-        suffix: '-400-2x'
+        width: 900,
+        height: 700,
+        crop: true,
+        suffix: '-450-2x'
+      },{
+        quality: 70,
+        width: 768,
+        height: 450,
+        crop: true,
+        suffix: '-768-1x'
+      },{
+        quality: 70,
+        width: 1536,
+        height: 900,
+        crop: true,
+        suffix: '-768-2x'
+      },{
+        quality: 70,
+        width: 992,
+        height: 450,
+        crop: true,
+        suffix: '-992-1x'
+      },{
+        quality: 70,
+        width: 1984,
+        height: 900,
+        crop: true,
+        upscale: true,
+        suffix: '-992-2x'
+      },{
+        quality: 70,
+        width: 1200,
+        height: 450,
+        crop: true,
+        suffix: '-1200-1x'
+      },{
+        quality: 70,
+        width: 2400,
+        height: 900,
+        crop: true,
+        upscale: true,
+        suffix: '-1200-2x'
       }]
     }))
     .pipe(gulp.dest('dist/img'))
