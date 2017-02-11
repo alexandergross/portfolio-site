@@ -30,9 +30,8 @@ gulp.task('responsive-img', function(){
         quality: 70,
         width: 1920,
         height: 550,
-        crop: true
       }],
-      '*': [{
+      'heading_img.jpg': [{
         quality: 70,
         width: 450,
         height: 350,
@@ -82,6 +81,84 @@ gulp.task('responsive-img', function(){
         crop: true,
         upscale: true,
         suffix: '-1200-2x'
+      }],
+      'features/*.jpg': [{
+        crop: false,
+        quality: 70,
+        width: 1920,
+        height: 550,
+      },{
+        quality: 70,
+        width: 360,
+        height: 300,
+        crop: true,
+        suffix: '-360-1x'
+      },{
+        quality: 70,
+        width: 720,
+        height: 600,
+        crop: true,
+        suffix: '-360-2x'
+      },{
+        quality: 70,
+        width: 295,
+        height: 300,
+        crop: true,
+        suffix: '-295-1x'
+      },{
+        quality: 70,
+        width: 590,
+        height: 600,
+        crop: true,
+        suffix: '-295-2x'
+      },{
+        quality: 70,
+        width: 220,
+        height: 300,
+        crop: true,
+        suffix: '-220-1x'
+      },{
+        quality: 70,
+        width: 440,
+        height: 600,
+        crop: true,
+        suffix: '-220-2x'
+      },{
+        quality: 70,
+        width: 520,
+        height: 300,
+        crop: true,
+        suffix: '-520-1x'
+      },{
+        quality: 70,
+        width: 1040,
+        height: 600,
+        crop: true,
+        suffix: '-520-2x'
+      },{
+        quality: 70,
+        width: 767,
+        height: 300,
+        crop: true,
+        suffix: '-767-1x'
+      },{
+        quality: 70,
+        width: 1534,
+        height: 600,
+        crop: true,
+        suffix: '-767-2x'
+      },{
+        quality: 70,
+        width: 420,
+        height: 300,
+        crop: true,
+        suffix: '-420-1x'
+      },{
+        quality: 70,
+        width: 840,
+        height: 600,
+        crop: true,
+        suffix: '-420-2x'
       }]
     }))
     .pipe(gulp.dest('dist/img'))
