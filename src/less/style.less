@@ -97,14 +97,15 @@ header {
 }
 
 main {
-  margin-top: 200px;
+  margin: 200px 0;
   h1, h2, h3, h4, h5, p, span {
     font-family: 'Hind Vadodara', sans-serif;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.4;
+    text-transform: uppercase;
   }
   p {
   }
@@ -121,13 +122,17 @@ main {
     .portfolio-item {
       min-height: 350px;
       background: @main-light;
-      margin: 50px 0;
-      box-shadow: -30px 24px 30px -2px rgba(0, 0, 0, 0.3);
+      margin: 40px 0 0 0;
+      box-shadow: -8px 24px 30px -2px rgba(0,0,0,.3);
       transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
       animation-name: portfolio;
       animation-duration: 3s;
       animation-delay: 1s;
       animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+      @media screen and (min-width: 768px) {
+        margin: -75px 0 0 0;
+        box-shadow: -30px 24px 30px -2px rgba(0, 0, 0, 0.3);
+      }
       figure {
         figcaption {
           padding: 1.5rem;
@@ -191,6 +196,30 @@ main {
           }
         }
       }
+    }
+  }
+}
+
+footer {
+  min-height: 150px;
+  background: @main-light;
+  color: white;
+  text-align: center;
+  padding: 5rem 0;
+  h1, h2, h3, h4, h5, p, span {
+    font-family: 'Hind Vadodara', sans-serif;
+  }
+  p.made-with {
+    font-size: 1.5rem;
+  }
+  a.social-icons {
+    color: white;
+    font-size: 3.5rem;
+    padding: 0 5px;
+    transition: color 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+    &:hover {
+      color: @main-dark;
+      transition: color 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
     }
   }
 }
