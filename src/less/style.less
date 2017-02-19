@@ -13,6 +13,11 @@
     }
 }
 
+body.modal-open {
+    overflow: visible;
+    padding-right: 0 !important;
+}
+
 button.btn-portfolio {
     background: @main-dark;
     font-family: 'Hind Vadodara', sans-serif;
@@ -89,6 +94,16 @@ header {
 
 main {
   margin-top: 200px;
+  h1, h2, h3, h4, h5, p, span {
+    font-family: 'Hind Vadodara', sans-serif;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+  p {
+  }
   #heading-img {
     .heading-img-img {
       margin: 0 -15px;
@@ -109,7 +124,17 @@ main {
       animation-duration: 3s;
       animation-delay: 1s;
       animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
-      //animation: portfolio 1.5s 1 cubic-bezier(0.165, 0.84, 0.44, 1);
+      figure {
+        figcaption {
+          padding: 1.5rem;
+          h3 {
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
     }
     .portfolio-item:hover,
     .portfolio-item:focus {
@@ -123,5 +148,38 @@ main {
   }
   @media screen and (min-width: 768px) {
     margin-top: 130px
+  }
+  .modal {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .modal-header {
+      background: @main-dark;
+      padding: 25px;
+      border-bottom: none;
+      h4.modal-title {
+        color: white;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+      .close {
+        float: right;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 0.5;
+        color: white;
+        text-shadow: none;
+        filter: alpha(opacity=20);
+        opacity: 1;
+      }
+    }
+    .modal-body {
+      padding: 0;
+      .features-description {
+        font-size: 1.6rem;
+        padding: 25px;
+      }
+    }
   }
 }

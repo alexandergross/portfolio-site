@@ -23,7 +23,7 @@ gulp.task('styles', function(){
 
 // Resize and compress the images
 gulp.task('responsive-img', function(){
-  gulp.src('src/img/**/*.{JPG,jpg,jpeg,gif,png}')
+  gulp.src('src/img/*.{JPG,jpg,jpeg,gif,png}')
     .pipe(images({
       'heading_img.jpg': [{
         crop: false,
@@ -81,8 +81,17 @@ gulp.task('responsive-img', function(){
         crop: true,
         upscale: true,
         suffix: '-1200-2x'
-      }],
-      'features/*.jpg': [{
+      }]
+    }))
+    .pipe(gulp.dest('dist/img'))
+    .pipe(notify("Compressed image"));
+});
+
+// Resize and compress the featured images
+gulp.task('responsive-img-features', function(){
+  gulp.src('src/img/features/**/*.{JPG,jpg,jpeg,gif,png}')
+    .pipe(images({
+      '*.jpg': [{
         crop: false,
         quality: 70,
         width: 1920,
@@ -161,15 +170,44 @@ gulp.task('responsive-img', function(){
         suffix: '-420-2x'
       }]
     }))
-    .pipe(gulp.dest('dist/img'))
-    .pipe(notify("Compressed image"));
+    .pipe(gulp.dest('dist/img/features'))
+    .pipe(notify("Compressed featured image"));
+});
+
+// Resize and compress the modals images
+gulp.task('responsive-img-modals', function(){
+  gulp.src('src/img/modals/**/*.{JPG,jpg,jpeg,gif,png}')
+    .pipe(images({
+      '*.jpg': [{
+        crop: false,
+        quality: 70,
+        width: 1920,
+        height: 550,
+      },{
+        quality: 70,
+        width: 600,
+        height: 400,
+        crop: true,
+        suffix: '-600-1x'
+      },{
+        quality: 70,
+        width: 1200,
+        height: 800,
+        crop: true,
+        suffix: '-600-2x'
+      }]
+    }))
+    .pipe(gulp.dest('dist/img/modals'))
+    .pipe(notify("Compressed modals images"));
 });
 
 // Watches the less files and images
 gulp.task('watch', function(){
   gulp.watch('src/less/**/*.less', ['styles']);
-  gulp.watch('src/img/**/*.{JPG,jpg,jpeg,gif,png}', {cwd:'./'}, ['responsive-img']);
+  gulp.watch('src/img/*.{JPG,jpg,jpeg,gif,png}', {cwd:'./'}, ['responsive-img']);
+  gulp.watch('src/img/modals/**/*.{JPG,jpg,jpeg,gif,png}', {cwd:'./'}, ['responsive-img-modals']);
+  gulp.watch('src/img/features/**/*.{JPG,jpg,jpeg,gif,png}', {cwd:'./'}, ['responsive-img-features']);
 });
 
 
-gulp.task('default', ['styles', 'responsive-img', 'watch']);
+gulp.task('default', ['styles', 'responsive-img', 'responsive-img-modals', 'responsive-img-features', 'watch']);
