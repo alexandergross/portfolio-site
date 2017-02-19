@@ -16,6 +16,10 @@
 body.modal-open {
     overflow: visible;
     padding-right: 0 !important;
+    #heading-img,
+    #portfolio-items {
+      filter: blur(5px);
+    }
 }
 
 button.btn-portfolio {
@@ -154,31 +158,38 @@ main {
       width: 100%;
       height: auto;
     }
-    .modal-header {
-      background: @main-dark;
-      padding: 25px;
-      border-bottom: none;
-      h4.modal-title {
-        color: white;
-        font-weight: 300;
-        text-transform: uppercase;
-      }
-      .close {
-        float: right;
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 0.5;
-        color: white;
-        text-shadow: none;
-        filter: alpha(opacity=20);
-        opacity: 1;
-      }
-    }
-    .modal-body {
-      padding: 0;
-      .features-description {
-        font-size: 1.6rem;
-        padding: 25px;
+    .modal-dialog {
+      margin: 60px auto;
+      .modal-content {
+        border: none;
+        .modal-header {
+          background: @main-dark;
+          padding: 25px;
+          border-bottom: none;
+          h4.modal-title {
+            color: white;
+            font-weight: 300;
+            text-transform: uppercase;
+          }
+          .close {
+            float: right;
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 0.5;
+            color: white;
+            text-shadow: none;
+            filter: alpha(opacity=20);
+            opacity: 1;
+            margin-left: 1.5rem;
+          }
+        }
+        .modal-body {
+          padding: 0;
+          .features-description {
+            font-size: 1.6rem;
+            padding: 25px;
+          }
+        }
       }
     }
   }

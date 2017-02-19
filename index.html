@@ -122,7 +122,7 @@
 
             <div class="col-sm-4">
               <div class="portfolio-item">
-                <button type="button" class="btn-portfolio btn btn-primary btn-lg btn-block">More Infos</button>
+                <button type="button" class="btn-portfolio btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#item2">More Infos</button>
                 <figure>
                   <picture>
                     <source
@@ -158,9 +158,10 @@
                 </figure>
               </div>
             </div>
+
             <div class="col-sm-4">
               <div class="portfolio-item">
-                <button type="button" class="btn-portfolio btn btn-primary btn-lg btn-block">More Infos</button>
+                <button type="button" class="btn-portfolio btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#item3">More Infos</button>
                 <figure>
                   <picture>
                     <source
@@ -227,7 +228,59 @@
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="item2" tabindex="-1" role="dialog" aria-labelledby="portfolio-item-2">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Truly stunning webdesign</h4>
+            </div>
+            <div class="modal-body">
+              <picture>
+                <source
+                  srcset="dist/img/modals/stunning-design-600-1x.jpg 1x,
+                          dist/img/modals/stunning-design-600-2x.jpg 2x">
+                <img
+                  src="dist/img/modals/stunning-design-600-1x.jpg 1x"
+                  alt="Mobile First">
+              </picture>
+              <div class="features-description">
+                <p>Beautiful Webdesign that gets you amazed. You will love the design works.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="item3" tabindex="-1" role="dialog" aria-labelledby="portfolio-item-3">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Fully Responsive with modern technics</h4>
+            </div>
+            <div class="modal-body">
+              <picture>
+                <source
+                  srcset="dist/img/modals/fully-responsive-600-1x.jpg 1x,
+                          dist/img/modals/fully-responsive-600-2x.jpg 2x">
+                <img
+                  src="dist/img/modals/fully-responsive-600-1x.jpg 1x"
+                  alt="Mobile First">
+              </picture>
+              <div class="features-description">
+                <p>Complete Responsive Frontend Development with the best modern technics possible. To create Websites which look great no matter on which device you view them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <footer>
+      
+    </footer>
 
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
