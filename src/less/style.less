@@ -113,7 +113,7 @@ header {
 }
 
 main {
-  margin: 200px 0 115px 0;
+  margin: 200px 0 0 0;
   h3, h4, h5, p, span {
     font-family: 'Hind Vadodara', sans-serif;
   }
@@ -195,6 +195,45 @@ main {
       @media screen and (min-width: 992px) {
         background-image: url(../img/bg/about-bg-1200-2x.jpg);
       }
+      p.about-text {
+        padding: 50px;
+        background: rgb(255, 255, 255);
+        font-size: 1.7rem;
+        line-height: 3rem;
+        box-shadow: -30px 24px 30px -2px rgba(0,0,0,.3);
+        transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+        &:hover {
+          box-shadow: -7px 6px 10px -2px rgba(0, 0, 0, 0.4);
+          transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+        }
+      }
+      figure {
+        width: 50%;
+        background: @main-light;
+        padding: 20px;
+        margin: 0 auto;
+        box-shadow: -30px 24px 30px -2px rgba(0,0,0,.3);
+        transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+        @media screen and (min-width: 500px) {
+          width: 33.3333%;
+        }
+        @media screen and (min-width: 768px) {
+          width: 100%;
+        }
+        &:hover {
+          box-shadow: -7px 6px 10px -2px rgba(0, 0, 0, 0.4);
+          transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+        figcaption {
+          color: white;
+          text-align: center;
+        }
+      }
+
     }
   }
   @media screen and (min-width: 768px) {

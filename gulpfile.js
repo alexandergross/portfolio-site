@@ -174,6 +174,93 @@ gulp.task('responsive-img-features', function(){
     .pipe(notify("Compressed featured image"));
 });
 
+// Resize and compress the about me images
+gulp.task('responsive-img-about', function(){
+  gulp.src('src/img/about/**/*.{JPG,jpg,jpeg,gif,png}')
+    .pipe(images({
+      '*.jpg': [{
+        crop: false,
+        quality: 70,
+        width: 1920,
+        height: 550,
+      },{
+        quality: 70,
+        width: 360,
+        height: 500,
+        crop: false,
+        suffix: '-360-1x'
+      },{
+        quality: 70,
+        width: 720,
+        height: 1000,
+        crop: false,
+        suffix: '-360-2x'
+      },{
+        quality: 70,
+        width: 295,
+        height: 500,
+        crop: false,
+        suffix: '-295-1x'
+      },{
+        quality: 70,
+        width: 590,
+        height: 1000,
+        crop: false,
+        suffix: '-295-2x'
+      },{
+        quality: 70,
+        width: 220,
+        height: 500,
+        crop: false,
+        suffix: '-220-1x'
+      },{
+        quality: 70,
+        width: 440,
+        height: 1000,
+        crop: false,
+        suffix: '-220-2x'
+      },{
+        quality: 70,
+        width: 520,
+        height: 500,
+        crop: false,
+        suffix: '-520-1x'
+      },{
+        quality: 70,
+        width: 1040,
+        height: 1000,
+        crop: false,
+        suffix: '-520-2x'
+      },{
+        quality: 70,
+        width: 767,
+        height: 500,
+        crop: false,
+        suffix: '-767-1x'
+      },{
+        quality: 70,
+        width: 1534,
+        height: 1000,
+        crop: false,
+        suffix: '-767-2x'
+      },{
+        quality: 70,
+        width: 420,
+        height: 500,
+        crop: false,
+        suffix: '-420-1x'
+      },{
+        quality: 70,
+        width: 840,
+        height: 1000,
+        crop: false,
+        suffix: '-420-2x'
+      }]
+    }))
+    .pipe(gulp.dest('dist/img/about'))
+    .pipe(notify("Compressed about image"));
+});
+
 // Resize and compress the modals images
 gulp.task('responsive-img-modals', function(){
   gulp.src('src/img/modals/**/*.{JPG,jpg,jpeg,gif,png}')
@@ -210,4 +297,4 @@ gulp.task('watch', function(){
 });
 
 
-gulp.task('default', ['styles', 'responsive-img', 'responsive-img-modals', 'responsive-img-features', 'watch']);
+gulp.task('default', ['styles', 'bg-img', 'responsive-img-modals', 'responsive-img-features', 'responsive-img-about', 'watch']);
