@@ -22,16 +22,16 @@ gulp.task('styles', function(){
 });
 
 // Resize and compress the images
-gulp.task('responsive-img', function(){
-  gulp.src('src/img/*.{JPG,jpg,jpeg,gif,png}')
+gulp.task('bg-img', function(){
+  gulp.src('src/img/bg/**/*.{JPG,jpg,jpeg,gif,png}')
     .pipe(images({
-      'heading_img.jpg': [{
+      '*.jpg': [{
         crop: false,
         quality: 70,
         width: 1920,
         height: 550,
       }],
-      'heading_img.jpg': [{
+      '*.jpg': [{
         quality: 70,
         width: 450,
         height: 350,
@@ -83,8 +83,8 @@ gulp.task('responsive-img', function(){
         suffix: '-1200-2x'
       }]
     }))
-    .pipe(gulp.dest('dist/img'))
-    .pipe(notify("Compressed image"));
+    .pipe(gulp.dest('dist/img/bg'))
+    .pipe(notify("Compressed bg images"));
 });
 
 // Resize and compress the featured images
@@ -204,7 +204,7 @@ gulp.task('responsive-img-modals', function(){
 // Watches the less files and images
 gulp.task('watch', function(){
   gulp.watch('src/less/**/*.less', ['styles']);
-  gulp.watch('src/img/*.{JPG,jpg,jpeg,gif,png}', {cwd:'./'}, ['responsive-img']);
+  gulp.watch('src/img/bg/**/*.{JPG,jpg,jpeg,gif,png}', {cwd:'./'}, ['bg-img']);
   gulp.watch('src/img/modals/**/*.{JPG,jpg,jpeg,gif,png}', {cwd:'./'}, ['responsive-img-modals']);
   gulp.watch('src/img/features/**/*.{JPG,jpg,jpeg,gif,png}', {cwd:'./'}, ['responsive-img-features']);
 });

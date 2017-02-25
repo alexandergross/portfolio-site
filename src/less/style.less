@@ -52,6 +52,10 @@ button.btn-portfolio:focus {
   }
 }
 
+.no-m {
+  margin: 0 !important;
+}
+
 header {
   position: absolute;
   top: 0;
@@ -110,8 +114,14 @@ header {
 
 main {
   margin: 200px 0 115px 0;
-  h1, h2, h3, h4, h5, p, span {
+  h3, h4, h5, p, span {
     font-family: 'Hind Vadodara', sans-serif;
+  }
+  h2 {
+    color: white;
+    font-size: 4.5rem;
+    font-family: 'Oleo Script', cursive;
+    line-height: 0.8;
   }
   h3 {
     font-size: 1.5rem;
@@ -128,7 +138,8 @@ main {
       }
     }
   }
-  #portfolio-items {
+  section#portfolio-items {
+    margin-bottom: 80px;
     .portfolio-item {
       position: relative;
       top: 0;
@@ -164,6 +175,26 @@ main {
     img {
       width: 100%;
       height: auto;
+    }
+  }
+  section#about {
+    .container-about {
+      min-height: 600px;
+      padding: 50px 0;
+      background-image: url(../img/bg/about-bg-450-2x.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      @media screen and (min-width: 450px) {
+        background-image: url(../img/bg/about-bg-768-2x.jpg);
+      }
+      @media screen and (min-width: 768px) {
+        background-image: url(../img/bg/about-bg-992-2x.jpg);
+      }
+      @media screen and (min-width: 992px) {
+        background-image: url(../img/bg/about-bg-1200-2x.jpg);
+      }
     }
   }
   @media screen and (min-width: 768px) {
