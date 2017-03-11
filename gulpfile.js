@@ -28,7 +28,7 @@ gulp.task('bg-img', function(){
         width: 1920,
         height: 550,
       }],
-      '*.jpg': [{
+      'heading-img.jpg': [{
         quality: 70,
         width: 450,
         height: 350,
@@ -76,6 +76,33 @@ gulp.task('bg-img', function(){
         width: 2400,
         height: 900,
         crop: true,
+        upscale: true,
+        suffix: '-1200-2x'
+      }],
+      'about-bg.jpg': [{
+        quality: 70,
+        width: 900,
+        height: 700,
+        crop: false,
+        suffix: '-450-2x'
+      },{
+        quality: 70,
+        width: 1536,
+        height: 900,
+        crop: false,
+        suffix: '-768-2x'
+      },{
+        quality: 70,
+        width: 1984,
+        height: 900,
+        crop: false,
+        upscale: true,
+        suffix: '-992-2x'
+      },{
+        quality: 70,
+        width: 2400,
+        height: 900,
+        crop: false,
         upscale: true,
         suffix: '-1200-2x'
       }]
