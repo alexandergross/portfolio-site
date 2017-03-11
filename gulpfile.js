@@ -1,24 +1,21 @@
-var gulp = require('gulp'),
-    rename = require('gulp-rename'),
-    notify = require('gulp-notify'),
-    less = require('gulp-less'),
-    images = require('gulp-responsive-images'),
-    LessPluginAutoPrefix = require('less-plugin-autoprefix'),
-    autoprefixPlugin = new LessPluginAutoPrefix({browsers: ["last 2 versions"]}),
-    LessPluginCleanCss = require('less-plugin-clean-css'),
-    cleanCSSPlugin = new LessPluginCleanCss({advanced: true});
+var gulp                = require('gulp'),
+    rename              = require('gulp-rename'),
+    notify              = require('gulp-notify'),
+    less                = require('gulp-less'),
+    images              = require('gulp-responsive-images'),
+    autoprefixer        = require('gulp-autoprefixer'),
+    minifyCSS           = require('gulp-minify-css'),
+    LessPluginCleanCss  = require('less-plugin-clean-css'),
+    gutil               = require('gulp-util')
 
-// Compile the less files and compress it
+// Compile, prefix and minify the css
 gulp.task('styles', function(){
   gulp.src('src/less/**/*.less')
-    .pipe(less({
-      plugins: [autoprefixPlugin]
-    }))
-    .pipe(less({
-      plugins: [cleanCSSPlugin]
-    }))
-    .pipe(gulp.dest('dist/css'))
-    .pipe(notify("Compiled CSS: <%= file.relative %>!"));
+      .pipe(less({compress: true}).on('error', gutil.log))
+      .pipe(autoprefixer('last 5 versions'))
+      .pipe(minifyCSS({keepBreaks: false}))
+      .pipe(gulp.dest('dist/css'))
+      .pipe(notify('Less Compiled, Prefixed and Minified'));
 });
 
 // Resize and compress the images
