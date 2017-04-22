@@ -11,9 +11,9 @@ var gulp                = require('gulp'),
 // Compile, prefix and minify the css
 gulp.task('styles', function(){
   gulp.src('src/less/**/*.less')
-      .pipe(less({compress: true}).on('error', gutil.log))
+      .pipe(less({compress: false}).on('error', gutil.log))
       .pipe(autoprefixer('last 5 versions'))
-      .pipe(minifyCSS({keepBreaks: false}))
+      // .pipe(minifyCSS({keepBreaks: false}))
       .pipe(gulp.dest('dist/css'))
       .pipe(notify('Less Compiled, Prefixed and Minified'));
 });
