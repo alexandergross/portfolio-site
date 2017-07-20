@@ -14,7 +14,7 @@ gulp.task('styles', function(){
       .pipe(less({compress: false}).on('error', gutil.log))
       .pipe(autoprefixer('last 5 versions'))
       // .pipe(minifyCSS({keepBreaks: false}))
-      .pipe(gulp.dest('dist/css'))
+      .pipe(gulp.dest('css'))
       .pipe(notify('Less Compiled, Prefixed and Minified'));
 });
 
