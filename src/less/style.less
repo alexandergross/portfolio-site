@@ -1,6 +1,6 @@
-@main-middle: #4E7CA0;
-@main-dark: #365A7D;
-@main-light: #7094AE;
+@main-middle: #4e7ca0;
+@main-dark: #365a7d;
+@main-light: #7094ae;
 
 @keyframes portfolio {
     from {
@@ -15,7 +15,7 @@
     }
 }
 
-body.modal-open {
+.modal-open {
     overflow: visible;
     padding-right: 0 !important;
     #heading-img,
@@ -25,9 +25,9 @@ body.modal-open {
     }
 }
 
-button.btn-portfolio {
+.btn-portfolio {
     background: @main-dark;
-    font-family: 'Hind Vadodara', sans-serif;
+    font-family: "Hind Vadodara", sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -37,8 +37,8 @@ button.btn-portfolio {
     transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 
-button.btn-portfolio:hover,
-button.btn-portfolio:focus {
+.btn-portfolio:hover,
+.btn-portfolio:focus {
   background: @main-middle;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
@@ -79,7 +79,7 @@ button.btn-portfolio:focus {
     .description {
       color: white;
       font-size: 4.5rem;
-      font-family: 'Oleo Script', cursive;
+      font-family: "Oleo Script", cursive;
       line-height: 0.8;
       text-align: center;;
       padding: 25px 0 15px 0;
@@ -113,15 +113,15 @@ button.btn-portfolio:focus {
   }
 }
 
-main {
+#main {
   margin: 200px 0 0 0;
   h3, h4, h5, p, span {
-    font-family: 'Hind Vadodara', sans-serif;
+    font-family: "Hind Vadodara", sans-serif;
   }
   h2 {
     color: white;
     font-size: 4.5rem;
-    font-family: 'Oleo Script', cursive;
+    font-family: "Oleo Script", cursive;
     line-height: 0.8;
   }
   h3 {
@@ -139,7 +139,7 @@ main {
       }
     }
   }
-  section#portfolio-items {
+  #portfolio-items {
     margin-bottom: 80px;
     .portfolio-item {
       position: relative;
@@ -178,7 +178,7 @@ main {
       height: auto;
     }
   }
-  section#about {
+  #about {
     min-height: 600px;
     padding: 50px 0;
     background-image: url(../img/bg/about-bg-450-2x.jpg);
@@ -288,7 +288,7 @@ main {
   text-align: center;
   background: @main-light;
   h1, h2, h3, h4, h5, p, span {
-    font-family: 'Hind Vadodara', sans-serif;
+    font-family: "Hind Vadodara", sans-serif;
   }
   p.made-with {
     background: @main-dark;

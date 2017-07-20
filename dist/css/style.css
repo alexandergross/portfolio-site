@@ -26,19 +26,19 @@
             transform: translateY(0px);
   }
 }
-body.modal-open {
+.modal-open {
   overflow: visible;
   padding-right: 0 !important;
 }
-body.modal-open #heading-img,
-body.modal-open #portfolio-items,
-body.modal-open #about {
+.modal-open #heading-img,
+.modal-open #portfolio-items,
+.modal-open #about {
   -webkit-filter: blur(5px);
           filter: blur(5px);
 }
-button.btn-portfolio {
-  background: #365A7D;
-  font-family: 'Hind Vadodara', sans-serif;
+.btn-portfolio {
+  background: #365a7d;
+  font-family: "Hind Vadodara", sans-serif;
   font-weight: 300;
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -47,9 +47,9 @@ button.btn-portfolio {
   border-radius: 0;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-button.btn-portfolio:hover,
-button.btn-portfolio:focus {
-  background: #4E7CA0;
+.btn-portfolio:hover,
+.btn-portfolio:focus {
+  background: #4e7ca0;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 .no-p {
@@ -72,12 +72,12 @@ button.btn-portfolio:focus {
   z-index: 999;
 }
 #header #site-logo {
-  background: #4E7CA0;
+  background: #4e7ca0;
   height: 260px;
 }
 #header #site-logo .logo {
   height: 130px;
-  background: #365A7D;
+  background: #365a7d;
   color: white;
   font-size: 10rem;
   line-height: 1;
@@ -88,7 +88,7 @@ button.btn-portfolio:focus {
 #header #site-logo .description {
   color: white;
   font-size: 4.5rem;
-  font-family: 'Oleo Script', cursive;
+  font-family: "Oleo Script", cursive;
   line-height: 0.8;
   text-align: center;
   padding: 25px 0 15px 0;
@@ -121,42 +121,42 @@ button.btn-portfolio:focus {
     height: 80px;
   }
 }
-main {
+#main {
   margin: 200px 0 0 0;
 }
-main h3,
-main h4,
-main h5,
-main p,
-main span {
-  font-family: 'Hind Vadodara', sans-serif;
+#main h3,
+#main h4,
+#main h5,
+#main p,
+#main span {
+  font-family: "Hind Vadodara", sans-serif;
 }
-main h2 {
+#main h2 {
   color: white;
   font-size: 4.5rem;
-  font-family: 'Oleo Script', cursive;
+  font-family: "Oleo Script", cursive;
   line-height: 0.8;
 }
-main h3 {
+#main h3 {
   font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.4;
   text-transform: uppercase;
 }
-main #heading-img .heading-img-img {
+#main #heading-img .heading-img-img {
   margin: 0 -15px;
 }
-main #heading-img .heading-img-img img {
+#main #heading-img .heading-img-img img {
   width: 100%;
   height: auto;
 }
-main section#portfolio-items {
+#main #portfolio-items {
   margin-bottom: 80px;
 }
-main section#portfolio-items .portfolio-item {
+#main #portfolio-items .portfolio-item {
   position: relative;
   top: 0;
-  background: #7094AE;
+  background: #7094ae;
   margin: 40px 0 0 0;
   box-shadow: -8px 24px 30px -2px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
@@ -170,55 +170,55 @@ main section#portfolio-items .portfolio-item {
           animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 @media screen and (min-width: 768px) {
-  main section#portfolio-items .portfolio-item {
+  #main #portfolio-items .portfolio-item {
     margin: -75px 0 0 0;
     box-shadow: -30px 24px 30px -2px rgba(0, 0, 0, 0.3);
   }
 }
-main section#portfolio-items .portfolio-item figure figcaption {
+#main #portfolio-items .portfolio-item figure figcaption {
   padding: 1.5rem;
 }
-main section#portfolio-items .portfolio-item figure figcaption h3 {
+#main #portfolio-items .portfolio-item figure figcaption h3 {
   color: white;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-main section#portfolio-items .portfolio-item:hover,
-main section#portfolio-items .portfolio-item:focus {
+#main #portfolio-items .portfolio-item:hover,
+#main #portfolio-items .portfolio-item:focus {
   box-shadow: -7px 6px 10px -2px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-main section#portfolio-items img {
+#main #portfolio-items img {
   width: 100%;
   height: auto;
 }
-main section#about {
+#main #about {
   min-height: 600px;
   padding: 50px 0;
   background-image: url(../img/bg/about-bg-450-2x.jpg);
-  background-color: #365A7D;
+  background-color: #365a7d;
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 @media screen and (min-width: 450px) {
-  main section#about {
+  #main #about {
     background-image: url(../img/bg/about-bg-768-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  main section#about {
+  #main #about {
     background-image: url(../img/bg/about-bg-992-2x.jpg);
   }
 }
 @media screen and (min-width: 992px) {
-  main section#about {
+  #main #about {
     background-image: url(../img/bg/about-bg-1200-2x.jpg);
   }
 }
-main section#about .container-about p.about-text {
+#main #about .container-about p.about-text {
   padding: 50px;
   background: #ffffff;
   font-size: 1.7rem;
@@ -226,66 +226,66 @@ main section#about .container-about p.about-text {
   box-shadow: -30px 24px 30px -2px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-main section#about .container-about p.about-text:hover {
+#main #about .container-about p.about-text:hover {
   box-shadow: -7px 6px 10px -2px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-main section#about .container-about figure {
+#main #about .container-about figure {
   width: 70%;
-  background: #7094AE;
+  background: #7094ae;
   padding: 20px;
   margin: 0 auto;
   box-shadow: -30px 24px 30px -2px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 @media screen and (min-width: 500px) {
-  main section#about .container-about figure {
+  #main #about .container-about figure {
     width: 50%;
   }
 }
 @media screen and (min-width: 768px) {
-  main section#about .container-about figure {
+  #main #about .container-about figure {
     width: 100%;
   }
 }
-main section#about .container-about figure:hover {
+#main #about .container-about figure:hover {
   box-shadow: -7px 6px 10px -2px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-main section#about .container-about figure img {
+#main #about .container-about figure img {
   width: 100%;
   height: auto;
 }
-main section#about .container-about figure figcaption {
+#main #about .container-about figure figcaption {
   color: white;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  main {
+  #main {
     margin-top: 130px;
   }
 }
-main .modal img {
+#main .modal img {
   width: 100%;
   height: auto;
 }
-main .modal .modal-dialog {
+#main .modal .modal-dialog {
   margin: 60px auto;
 }
-main .modal .modal-dialog .modal-content {
+#main .modal .modal-dialog .modal-content {
   border: none;
 }
-main .modal .modal-dialog .modal-content .modal-header {
-  background: #365A7D;
+#main .modal .modal-dialog .modal-content .modal-header {
+  background: #365a7d;
   padding: 25px;
   border-bottom: none;
 }
-main .modal .modal-dialog .modal-content .modal-header h4.modal-title {
+#main .modal .modal-dialog .modal-content .modal-header h4.modal-title {
   color: white;
   font-weight: 300;
   text-transform: uppercase;
 }
-main .modal .modal-dialog .modal-content .modal-header .close {
+#main .modal .modal-dialog .modal-content .modal-header .close {
   float: right;
   font-size: 50px;
   font-weight: 700;
@@ -296,17 +296,17 @@ main .modal .modal-dialog .modal-content .modal-header .close {
   opacity: 1;
   margin-left: 1.5rem;
 }
-main .modal .modal-dialog .modal-content .modal-body {
+#main .modal .modal-dialog .modal-content .modal-body {
   padding: 0;
 }
-main .modal .modal-dialog .modal-content .modal-body .features-description {
+#main .modal .modal-dialog .modal-content .modal-body .features-description {
   font-size: 1.6rem;
   padding: 25px;
 }
 #footer {
   color: white;
   text-align: center;
-  background: #7094AE;
+  background: #7094ae;
 }
 #footer h1,
 #footer h2,
@@ -315,10 +315,10 @@ main .modal .modal-dialog .modal-content .modal-body .features-description {
 #footer h5,
 #footer p,
 #footer span {
-  font-family: 'Hind Vadodara', sans-serif;
+  font-family: "Hind Vadodara", sans-serif;
 }
 #footer p.made-with {
-  background: #365A7D;
+  background: #365a7d;
   font-size: 1.5rem;
   padding: 35px 0;
   margin: 0;
@@ -329,33 +329,33 @@ main .modal .modal-dialog .modal-content .modal-body .features-description {
   transition: color 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 #footer a.social-icons:hover {
-  color: #7094AE;
+  color: #7094ae;
   transition: color 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 #footer a.social-icons .btn-social-icon {
   padding: 70px 0;
 }
 #footer a.social-icons .btn-social-icon.btn-git {
-  background: #365A7D;
+  background: #365a7d;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 #footer a.social-icons .btn-social-icon.btn-git:hover {
-  background: #4E7CA0;
+  background: #4e7ca0;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 #footer a.social-icons .btn-social-icon.btn-xing {
-  background: #7094AE;
+  background: #7094ae;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 #footer a.social-icons .btn-social-icon.btn-xing:hover {
-  background: #4E7CA0;
+  background: #4e7ca0;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 #footer a.social-icons .btn-social-icon.btn-linkedin {
-  background: #4E7CA0;
+  background: #4e7ca0;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
 #footer a.social-icons .btn-social-icon.btn-linkedin:hover {
-  background: #365A7D;
+  background: #365a7d;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
