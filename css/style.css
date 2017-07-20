@@ -196,7 +196,7 @@
 #main #about {
   min-height: 600px;
   padding: 50px 0;
-  background-image: url(../img/bg/about-bg-450-2x.jpg);
+  background-image: url(../dist/img/bg/about-bg-450-2x.jpg);
   background-color: #365a7d;
   background-position: top center;
   background-repeat: no-repeat;
@@ -205,17 +205,17 @@
 }
 @media screen and (min-width: 450px) {
   #main #about {
-    background-image: url(../img/bg/about-bg-768-2x.jpg);
+    background-image: url(../dist/img/bg/about-bg-768-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   #main #about {
-    background-image: url(../img/bg/about-bg-992-2x.jpg);
+    background-image: url(../dist/img/bg/about-bg-992-2x.jpg);
   }
 }
 @media screen and (min-width: 992px) {
   #main #about {
-    background-image: url(../img/bg/about-bg-1200-2x.jpg);
+    background-image: url(../dist/img/bg/about-bg-1200-2x.jpg);
   }
 }
 #main #about .container-about p.about-text {
