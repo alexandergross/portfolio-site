@@ -28,7 +28,7 @@
 
 <body>
 
-    <header data-spy="affix" data-offset-top="50">
+    <header id="header" data-spy="affix" data-offset-top="50">
       <section id="site-logo">
         <div class="container">
           <div class="row">
@@ -50,7 +50,7 @@
       </section>
     </header>
 
-    <main>
+    <main id="main">
       <section id="heading-img">
         <div class="container-fluid">
           <div class="row">
@@ -201,50 +201,48 @@
       </section>
 
       <section id="about">
-        <div class="container-fluid container-about no-m">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h2>About me</h2>
-              </div>
+        <div class="container container-about">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>About me</h2>
             </div>
-            <div class="row">
-              <div class="col-sm-8">
-                <p class="about-text">Hi! I'm Alex Gross a frontend developer from Austria. I have a strong passion about design, web development, music and nearly everything technology related. In my current job i work on the front ends of online shops which i really like. I love to spend my free time with making electronic music and a lot of sport. Another thing about me is that i'm always driven to get better in what i'm doing. No matter if this is web development or making music. Your skills can never be good enough. Especially when it comes to developing stuff. You can never learn enough. I think that this is a life long journey. The technology never stands still so you always have to learn new things and technics. But this is also the fun part of web development and the technologies we are all working with. It never gets boring. There is always something new out there to discover. Feel free to check out my LinkedIn and Xing Profile to find out more about me. So far thats all about me. I wish you all a wonderful day.</p>
-              </div>
-              <div class="col-sm-4">
-                <figure>
-                  <picture>
-                    <source
-                      media="(min-width: 1200px)"
-                      srcset="dist/img/about/alex-foto-360-1x.jpg 1x,
-                              dist/img/about/alex-foto-360-2x.jpg 2x">
-                    <source
-                      media="(min-width: 992px)"
-                      srcset="dist/img/about/alex-foto-295-1x.jpg 1x,
-                              dist/img/about/alex-foto-295-2x.jpg 2x">
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="dist/img/about/alex-foto-220-1x.jpg 1x,
-                              dist/img/about/alex-foto-220-2x.jpg 2x">
-                    <source
-                      media="(min-width: 550px)"
-                      srcset="dist/img/about/alex-foto-767-1x.jpg 1x,
-                              dist/img/about/alex-foto-767-2x.jpg 2x">
-                    <source
-                      media="(min-width: 450px)"
-                      srcset="dist/img/about/alex-foto-520-1x.jpg 1x,
-                              dist/img/about/alex-foto-520-2x.jpg 2x">
-                    <source
-                      srcset="dist/img/about/alex-foto-420-1x.jpg 1x,
-                              dist/img/about/alex-foto-420-2x.jpg 2x">
-                    <img src="dist/img/about/alex-foto-420-1x.jpg" alt="Foto Alex Gross">
-                  </picture>
-                  <figcaption>
-                    <h3>Thats me</h3>
-                  </figcaption>
-                </figure>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8">
+              <p class="about-text">Hi! I'm Alex Gross a frontend developer from Austria. I have a strong passion about design, web development, music and nearly everything technology related. In my current job i work on the front ends of online shops which i really like. I love to spend my free time with making electronic music and a lot of sport. Another thing about me is that i'm always driven to get better in what i'm doing. No matter if this is web development or making music. Your skills can never be good enough. Especially when it comes to developing stuff. You can never learn enough. I think that this is a life long journey. The technology never stands still so you always have to learn new things and technics. But this is also the fun part of web development and the technologies we are all working with. It never gets boring. There is always something new out there to discover. Feel free to check out my LinkedIn and Xing Profile to find out more about me. So far thats all about me. I wish you all a wonderful day.</p>
+            </div>
+            <div class="col-sm-4">
+              <figure>
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="dist/img/about/alex-foto-360-1x.jpg 1x,
+                            dist/img/about/alex-foto-360-2x.jpg 2x">
+                  <source
+                    media="(min-width: 992px)"
+                    srcset="dist/img/about/alex-foto-295-1x.jpg 1x,
+                            dist/img/about/alex-foto-295-2x.jpg 2x">
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="dist/img/about/alex-foto-220-1x.jpg 1x,
+                            dist/img/about/alex-foto-220-2x.jpg 2x">
+                  <source
+                    media="(min-width: 550px)"
+                    srcset="dist/img/about/alex-foto-767-1x.jpg 1x,
+                            dist/img/about/alex-foto-767-2x.jpg 2x">
+                  <source
+                    media="(min-width: 450px)"
+                    srcset="dist/img/about/alex-foto-520-1x.jpg 1x,
+                            dist/img/about/alex-foto-520-2x.jpg 2x">
+                  <source
+                    srcset="dist/img/about/alex-foto-420-1x.jpg 1x,
+                            dist/img/about/alex-foto-420-2x.jpg 2x">
+                  <img src="dist/img/about/alex-foto-420-1x.jpg" alt="Foto Alex Gross">
+                </picture>
+                <figcaption>
+                  <h3>Thats me</h3>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
@@ -318,7 +316,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="row">
           <div class="col-xs-4 no-p">
@@ -345,7 +343,7 @@
         </div>
         <div class="row">
           <div class="col-md-12 no-p">
-              <p class="made-with">Made with <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by Alex Gross</p>
+              <p class="made-with">Made with <i class="fa fa-heart" aria-hidden="true"></i> by Alex Gross</p>
           </div>
         </div>
       </div>

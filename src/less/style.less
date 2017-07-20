@@ -57,7 +57,7 @@ button.btn-portfolio:focus {
   margin: 0 !important;
 }
 
-header {
+#header {
   position: absolute;
   top: 0;
   left: 0;
@@ -179,24 +179,24 @@ main {
     }
   }
   section#about {
+    min-height: 600px;
+    padding: 50px 0;
+    background-image: url(../img/bg/about-bg-450-2x.jpg);
+    background-color: @main-dark;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @media screen and (min-width: 450px) {
+      background-image: url(../img/bg/about-bg-768-2x.jpg);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../img/bg/about-bg-992-2x.jpg);
+    }
+    @media screen and (min-width: 992px) {
+      background-image: url(../img/bg/about-bg-1200-2x.jpg);
+    }
     .container-about {
-      min-height: 600px;
-      padding: 50px 0;
-      background-image: url(../img/bg/about-bg-450-2x.jpg);
-      background-color: @main-dark;
-      background-position: top center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: contain;
-      @media screen and (min-width: 450px) {
-        background-image: url(../img/bg/about-bg-768-2x.jpg);
-      }
-      @media screen and (min-width: 768px) {
-        background-image: url(../img/bg/about-bg-992-2x.jpg);
-      }
-      @media screen and (min-width: 992px) {
-        background-image: url(../img/bg/about-bg-1200-2x.jpg);
-      }
       p.about-text {
         padding: 50px;
         background: rgb(255, 255, 255);
@@ -283,7 +283,7 @@ main {
   }
 }
 
-footer {
+#footer {
   color: white;
   text-align: center;
   background: @main-light;

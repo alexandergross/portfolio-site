@@ -64,18 +64,18 @@ button.btn-portfolio:focus {
 .no-m {
   margin: 0 !important;
 }
-header {
+#header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
 }
-header #site-logo {
+#header #site-logo {
   background: #4E7CA0;
   height: 260px;
 }
-header #site-logo .logo {
+#header #site-logo .logo {
   height: 130px;
   background: #365A7D;
   color: white;
@@ -85,7 +85,7 @@ header #site-logo .logo {
   padding-top: 20px;
   margin: 0 -15px;
 }
-header #site-logo .description {
+#header #site-logo .description {
   color: white;
   font-size: 4.5rem;
   font-family: 'Oleo Script', cursive;
@@ -94,30 +94,30 @@ header #site-logo .description {
   padding: 25px 0 15px 0;
 }
 @media screen and (min-width: 768px) {
-  header #site-logo {
+  #header #site-logo {
     height: 130px;
   }
-  header #site-logo .logo {
+  #header #site-logo .logo {
     margin: 0;
   }
-  header #site-logo .description {
+  #header #site-logo .description {
     text-align: right;
   }
 }
-header.affix #site-logo {
+#header.affix #site-logo {
   height: 160px;
 }
-header.affix #site-logo .logo {
+#header.affix #site-logo .logo {
   height: 80px;
   font-size: 6rem;
   padding-top: 10px;
 }
-header.affix #site-logo .description {
+#header.affix #site-logo .description {
   font-size: 2.5rem;
   padding: 15px 0 15px;
 }
 @media screen and (min-width: 768px) {
-  header.affix #site-logo {
+  #header.affix #site-logo {
     height: 80px;
   }
 }
@@ -193,7 +193,7 @@ main section#portfolio-items img {
   width: 100%;
   height: auto;
 }
-main section#about .container-about {
+main section#about {
   min-height: 600px;
   padding: 50px 0;
   background-image: url(../img/bg/about-bg-450-2x.jpg);
@@ -201,20 +201,20 @@ main section#about .container-about {
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: cover;
 }
 @media screen and (min-width: 450px) {
-  main section#about .container-about {
+  main section#about {
     background-image: url(../img/bg/about-bg-768-2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  main section#about .container-about {
+  main section#about {
     background-image: url(../img/bg/about-bg-992-2x.jpg);
   }
 }
 @media screen and (min-width: 992px) {
-  main section#about .container-about {
+  main section#about {
     background-image: url(../img/bg/about-bg-1200-2x.jpg);
   }
 }
@@ -303,59 +303,59 @@ main .modal .modal-dialog .modal-content .modal-body .features-description {
   font-size: 1.6rem;
   padding: 25px;
 }
-footer {
+#footer {
   color: white;
   text-align: center;
   background: #7094AE;
 }
-footer h1,
-footer h2,
-footer h3,
-footer h4,
-footer h5,
-footer p,
-footer span {
+#footer h1,
+#footer h2,
+#footer h3,
+#footer h4,
+#footer h5,
+#footer p,
+#footer span {
   font-family: 'Hind Vadodara', sans-serif;
 }
-footer p.made-with {
+#footer p.made-with {
   background: #365A7D;
   font-size: 1.5rem;
   padding: 35px 0;
   margin: 0;
 }
-footer a.social-icons {
+#footer a.social-icons {
   color: white;
   font-size: 4rem;
   transition: color 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-footer a.social-icons:hover {
+#footer a.social-icons:hover {
   color: #7094AE;
   transition: color 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-footer a.social-icons .btn-social-icon {
+#footer a.social-icons .btn-social-icon {
   padding: 70px 0;
 }
-footer a.social-icons .btn-social-icon.btn-git {
+#footer a.social-icons .btn-social-icon.btn-git {
   background: #365A7D;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-footer a.social-icons .btn-social-icon.btn-git:hover {
+#footer a.social-icons .btn-social-icon.btn-git:hover {
   background: #4E7CA0;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-footer a.social-icons .btn-social-icon.btn-xing {
+#footer a.social-icons .btn-social-icon.btn-xing {
   background: #7094AE;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-footer a.social-icons .btn-social-icon.btn-xing:hover {
+#footer a.social-icons .btn-social-icon.btn-xing:hover {
   background: #4E7CA0;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-footer a.social-icons .btn-social-icon.btn-linkedin {
+#footer a.social-icons .btn-social-icon.btn-linkedin {
   background: #4E7CA0;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
-footer a.social-icons .btn-social-icon.btn-linkedin:hover {
+#footer a.social-icons .btn-social-icon.btn-linkedin:hover {
   background: #365A7D;
   transition: background 0.4s cubic-bezier(0.46, 0.03, 0.52, 0.96);
 }
